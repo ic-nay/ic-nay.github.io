@@ -22,8 +22,9 @@
     font-size: 12em;
     display: inline;
   }
-  .header span {
+  .header p {
     font-size: 1.5em;
+    display: inline;
   }
   .container {
     margin-top: 13em;
@@ -38,14 +39,32 @@
     padding: 1em;
     margin: 3em;
     font-size: 1.25em;
+    transition: 0.75s;
   }
   .left {
     margin-left: 5%;
     margin-right: auto;
   }
+  .left:hover {
+    transform: rotate(-2deg);
+  }
   .right {
     margin-left: auto;
     margin-right: 5%;
+  }
+  .right:hover {
+    transform: rotate(2deg);
+  }
+  @media(prefers-reduced-animation){
+  
+    .left:hover {
+      transform: rotate(-1deg);
+    }
+    
+    .right:hover {
+      transform: rotate(1deg);
+    }
+  
   }
   .center {
     margin-right: auto;
@@ -55,24 +74,24 @@
 </head>
 <body>
 <div class="header">
-  <h1> Nic </h1> <span> wants to build you some software</span>
+  <h1>nic</h1><p> likes making stuff!</p>
 </div>
 <div class="container">
-  <a href="/software_projects.html">
+  <a href="./software_projects.html" id="software">
   <div class="content left">
     <h1> Software! </h1>
     <p> Code that I have written, with some less than pretty visuals </p>
   </div>
   </a>
-  <a href="">
+  <a href="./visual_projects.html" id="visual">
   <div class="content right">
-    <h1> Visual Media </h1>
+    <h1> Visual Media!</h1>
     <p> Less than pretty visuals, some of which may also feature code that I have written </p>
   </div>
   </a>
-  <a href="/writing.html">
+  <a href="./writing.html" id="writing">
   <div class="content left">
-    <h1> Writing! </h1>
+    <h1> Writing!</h1>
     <p> Non-code that I have written, some of which may also feature code that I have written </p>
   </div>
   </a>
@@ -80,5 +99,5 @@
     <p>Contact? Really? Well, if you're sure. contact@[thiswebsitename].com</p>
   </div>
 </div>
-</body> 
+</body>
 </html>
