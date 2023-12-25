@@ -16,11 +16,18 @@
     position: absolute;
     background-color: black;
     color: white;
-    display: inline;
+    display:inline;
   }
   .header h1 {
     font-size: 12em;
-    display: inline;
+    display:inline;
+  }
+  @media screen and (min-width: 550px){
+    .header h1:after{
+      content:" likes making stuff";
+      font-size: 0.15em;
+      font-weight: 100;
+    }
   }
   .header p {
     font-size: 1.5em;
@@ -45,23 +52,23 @@
     margin-left: 5%;
     margin-right: auto;
   }
-  .left:hover {
+  a .left:hover {
     transform: rotate(-2deg);
   }
   .right {
     margin-left: auto;
     margin-right: 5%;
   }
-  .right:hover {
+  a .right:hover {
     transform: rotate(2deg);
   }
   @media(prefers-reduced-animation){
   
-    .left:hover {
+    a .left:hover {
       transform: rotate(-1deg);
     }
     
-    .right:hover {
+    a .right:hover {
       transform: rotate(1deg);
     }
   
@@ -74,16 +81,16 @@
 </head>
 <body>
 <div class="header">
-  <h1>nic</h1><p> likes making stuff!</p>
+  <h1>nic</h1>
 </div>
 <div class="container">
-  <a href="./software_projects.html" id="software">
+  <a href="./software.html" id="software">
   <div class="content left">
     <h1> Software! </h1>
     <p> Code that I have written, with some less than pretty visuals </p>
   </div>
   </a>
-  <a href="./visual_projects.html" id="visual">
+  <a href="./visual.html" id="visual">
   <div class="content right">
     <h1> Visual Media!</h1>
     <p> Less than pretty visuals, some of which may also feature code that I have written </p>
@@ -95,6 +102,10 @@
     <p> Non-code that I have written, some of which may also feature code that I have written </p>
   </div>
   </a>
+  <div class="content right">
+    <h1> About!</h1>
+    <p> Haha, nope. I appreciate your curiosity, and I'm certain if you dig, you can find a great deal of information me. I'm no ghost. I'm not going to contribute to that any more than I need to, though. Everything I want to share about myself is here in my work. The people who know me are my friends; random strangers on the internet are not.</p>
+  </div>
   <div class="content center">
     <p>Contact? Really? Well, if you're sure. contact@[thiswebsitename].com</p>
   </div>
