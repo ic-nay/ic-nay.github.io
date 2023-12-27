@@ -8,6 +8,7 @@
   }
   a {
     text-decoration: none;
+    color: white;
   }
   .header {
     width: 100%;
@@ -23,11 +24,15 @@
     font-size: 12em;
     display:inline;
   }
+  .header h1:nth-child(2) {
+    color:red;
+  }
   @media screen and (min-width: 550px){
     .header h1:after{
       content:" likes making words";
       font-size: 0.15em;
       font-weight: 100;
+      color: white;
     }
     .header:hover h1:after{
       content:" likes going back";
@@ -50,8 +55,25 @@
     font-size: 1.25em;
     transition: 0.75s;
   }
-  .content img {
-    border: 2px solid red;
+  .content h1 {
+    display: inline;
+  }
+  table {
+    color: white;
+    width: 100%;
+    text-align: center;
+    font-size: 1em;
+    border-collapse: collapse;
+  }
+  table:nth-child(odd){
+      border-bottom: 2px solid white;
+  }
+  td {
+   padding: 1em;
+   border-bottom: 2px solid white;
+  }
+  td a {
+    text-decoration: underline;
   }
   .left {
     margin-left: 5%;
@@ -91,6 +113,40 @@
 </div>
 </a>
 <div class="container">
+  <a href="#trivia">
+    <div class="content left">
+      <details>
+        <summary>
+          <h1>Trivia Packs!</h1>
+          <p> Like a lot of people, I experimented a bit in university. Unfortunately, I fell in with the wrong crowd, and got hooked on trivia. Mainly Quizbowl, though I might throw in a bit of Consensus, or whatever else takes me. </p>
+        </summary>
+        <table>
+          <tr>
+            <td>I Promise It's Easier This Time</td>
+            <td>Quizbowl</td>
+            <td>Trashademic</td>
+            <td>Medium Difficulty</td>
+            <td>The title is a reference to the first pack I wrote. It was less than well balanced.</td>
+            <td><a href="IPIETT.pdf" download>Download Link.pdf</a></td>
+          </tr>
+          <tr>
+            <td>Oops! All Numbers!</td>
+            <td>Quizbowl</td>
+            <td>Trashademic</td>
+            <td>Medium Difficulty</td>
+            <td>All the tossups in this one are numbers. It's not one of my finest packs, but it has a couple good ones in there.</td>
+            <td><a href="">Download Link.pdf</a></td>
+          </tr>
+        </table>
+      </details>
+    </div>
+  </a>
+  <a href="#stories">
+    <div class="content right">
+      <h1> Stories! </h1>
+      <p> I'm aware these aren't particularly good. But, more than anything, writing is something I love doing, and being able to share it is very motivating. I'm more than happy to fail out loud. </p>
+    </div>
+  </a>
 </div>
 </body>
 </html>
