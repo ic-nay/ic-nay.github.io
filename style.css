@@ -1,0 +1,82 @@
+  body {
+    font-family: Helvetica;
+    margin: 0;
+    padding: 0;
+  }
+  a {
+    text-decoration: none;
+  }
+  .header {
+    width: 100%;
+    position: relative;
+    height:10em;
+    background-color: black;
+    color: white;
+  }
+  .header h1 {
+    font-size: 12em;
+    display:inline;
+    position: absolute;
+    bottom:0;
+    margin:0;
+    line-height:5%;
+  }
+  @media screen and (min-width: 550px){
+    .header h1:after{
+      content:"likes making stuff";
+      padding: 0.2em;
+      font-size: 0.15em;
+      font-weight: 100;
+      position:relative;
+      top:0.8em;
+      background-color: black;
+    }
+  }
+  @media screen and (max-width: 360px){
+    .header h1 {
+      bottom:25%;
+    }
+  }
+  .container {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .content {
+    background-color: black;
+    width: 70%;
+    color: white;
+    padding: 1em;
+    margin: 3em;
+    font-size: 1.25em;
+    transition: 0.75s;
+  }
+  .left {
+    margin-left: 5%;
+    margin-right: auto;
+  }
+  a .left:hover {
+    transform: rotate(-2deg);
+  }
+  .right {
+    margin-left: auto;
+    margin-right: 5%;
+  }
+  a .right:hover {
+    transform: rotate(2deg);
+  }
+  @media(prefers-reduced-animation){
+  
+    a .left:hover {
+      transform: rotate(-1deg);
+    }
+    
+    a .right:hover {
+      transform: rotate(1deg);
+    }
+  
+  }
+  .center {
+    margin-right: auto;
+    margin-left: auto;
+  }

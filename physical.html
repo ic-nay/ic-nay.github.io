@@ -1,28 +1,7 @@
 <html>
 <head>
+<link rel="stylesheet" href="style.css">
 <style>
-  body {
-    font-family: Helvetica;
-    margin: 0;
-    padding: 0;
-  }
-  a {
-    text-decoration: none;
-  }
-  .header {
-    width: 100%;
-    top: 0;
-    height: 9.9em;
-    position: absolute;
-    background-color: black;
-    color: white;
-    display:inline;
-    transform-origin:0;
-  }
-  .header h1 {
-    font-size: 12em;
-    display:inline;
-  }
   @media screen and (min-width: 550px){
     .header h1:after{
       content:" likes making things tangible";
@@ -34,53 +13,6 @@
       font-size: 0.15em;
       font-weight: 100;
     }
-  }
-  .container {
-    margin-top: 13em;
-    width: 80%;
-    margin-right: auto;
-    margin-left: auto;
-  }
-  .content {
-    background-color: black;
-    width: 70%;
-    color: white;
-    padding: 1em;
-    margin: 3em;
-    font-size: 1.25em;
-    transition: 0.75s;
-  }
-  .content img {
-    border: 2px solid red;
-  }
-  .left {
-    margin-left: 5%;
-    margin-right: auto;
-  }
-  a .left:hover {
-    transform: rotate(-2deg);
-  }
-  .right {
-    margin-left: auto;
-    margin-right: 5%;
-  }
-  a .right:hover {
-    transform: rotate(2deg);
-  }
-  @media(prefers-reduced-animation){
-  
-    a .left:hover {
-      transform: rotate(-1deg);
-    }
-    
-    a .right:hover {
-      transform: rotate(1deg);
-    }
-  
-  }
-  .center {
-    margin-right: auto;
-    margin-left: auto;
   }
 </style>
 </head>
