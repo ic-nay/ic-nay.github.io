@@ -52,6 +52,12 @@
     font-size: 1.25em;
     transition: 0.75s;
   }
+
+  .croppable {
+    overflow: hidden;
+    text-wrap: nowrap;
+  }
+
   .container a:nth-child(odd) .content {
     margin-left: 5%;
     margin-right: auto;
