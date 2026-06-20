@@ -52,35 +52,39 @@
     font-size: 1.25em;
     transition: 0.75s;
   }
-  .left {
+  .container a:nth-child(odd) .content {
     margin-left: 5%;
     margin-right: auto;
   }
-  a .left:hover {
-    transform: rotate(-2deg);
-  }
-  .right {
+  .container a:nth-child(even) .content {
     margin-left: auto;
     margin-right: 5%;
   }
-  a .right:hover {
-    transform: rotate(2deg);
+
+  .container a:nth-child(odd) .content:hover {
+    transform: rotate(-2deg);
   }
-  @media(prefers-reduced-animation){
+  .container a:nth-child(even) .content:hover {
+    transform: rotate(-2deg);
+  }
+
+  @media(prefers-reduced-motion){
   
-    a .left:hover {
-      transform: rotate(-1deg);
+    .content:nth-child(odd):hover {
+      transform: rotate(-0.5deg);
     }
     
-    a .right:hover {
-      transform: rotate(1deg);
+    .content:nth-child(even):hover {
+      transform: rotate(0.5deg);
     }
   
   }
+
   .center {
     margin-right: auto;
     margin-left: auto;
   }
+
   table {
     color: white;
     text-align: center;
